@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+attendance_debug.log
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+
+# YOLO runs (temporary detection outputs)
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test images in root (but keep dataset and attendance_images)
+/*.jpeg
+/*.jpg
+/*.png
+
+# Data files (keep structure but ignore large files if needed)
+# Uncomment if you want to ignore data files
+# data/*.csv
+# face_db.pkl
+
+# PDF reports (optional - uncomment if you don't want to track reports)
+# *.pdf
+
