@@ -8,7 +8,10 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtCore import Qt, pyqtSignal
 
 import matplotlib
-matplotlib.use('Qt5Agg')
+if os.environ.get("DISPLAY", "") == "":
+    matplotlib.use("Agg")   # Headless (Colab, server)
+else:
+    matplotlib.use("Qt5Agg")
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
